@@ -13,6 +13,11 @@ depends: [
   "dune" {>= "3.18"}
   "ocaml"
   "base"
+  "stdio"
+  "ppx_deriving"
+  "ppx_import"
+  "ppx_assert" {with-test}
+  "ppx_inline_test" {with-test}
   "odoc" {with-doc}
 ]
 build: [

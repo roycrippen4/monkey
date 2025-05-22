@@ -19,7 +19,14 @@
  (name monkey)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml base)
+ (depends
+  ocaml
+  base
+  stdio
+  ppx_deriving
+  ppx_import
+  (ppx_assert :with-test)
+  (ppx_inline_test :with-test))
  (tags
   ("add topics" "to describe" your project)))
 
